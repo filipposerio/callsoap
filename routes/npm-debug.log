@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'zardak-soap' ]
+2 info using npm@2.11.1
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
+5 verbose config Skipping project config: /home/filippo/.npmrc. (matches userconfig)
+6 verbose install initial load of /home/filippo/package.json
+7 verbose installManyTop reading scoped package data from /home/filippo/node_modules/npm/package.json
+8 verbose installManyTop reading scoped package data from /home/filippo/node_modules/soap/package.json
+9 verbose readDependencies loading dependencies from /home/filippo/package.json
+10 silly cache add args [ 'zardak-soap', null ]
+11 verbose cache add spec zardak-soap
+12 silly cache add parsed spec { raw: 'zardak-soap',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'zardak-soap',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed zardak-soap@*
+14 verbose addNamed "*" is a valid semver range for zardak-soap
+15 silly addNameRange { name: 'zardak-soap', range: '*', hasData: false }
+16 silly mapToRegistry name zardak-soap
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/zardak-soap
+20 verbose addNameRange registry:https://registry.npmjs.org/zardak-soap not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/zardak-soap
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 14:24:11
+24 verbose request id f21a1ac3302e816b
+25 http request GET https://registry.npmjs.org/zardak-soap
+26 http 404 https://registry.npmjs.org/zardak-soap
+27 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '51',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Sat, 04 Jul 2015 12:24:12 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-ams4133-AMS',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1436012652.294937,VS0,VE170' }
+28 silly get cb [ 404,
+28 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly get     'content-type': 'application/json',
+28 silly get     'cache-control': 'max-age=0',
+28 silly get     'content-length': '51',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Sat, 04 Jul 2015 12:24:12 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     age: '0',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-ams4133-AMS',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1436012652.294937,VS0,VE170' } ]
+29 verbose stack Error: 404 Not Found: zardak-soap
+29 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+29 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+29 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+29 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+29 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+29 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+29 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+29 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+29 verbose stack     at _stream_readable.js:920:16
+29 verbose stack     at process._tickCallback (node.js:415:13)
+30 verbose statusCode 404
+31 verbose pkgid zardak-soap
+32 verbose cwd /home/filippo/nodeprj/callsoap
+33 error Linux 3.16.0-30-generic
+34 error argv "node" "/usr/local/bin/npm" "install" "zardak-soap"
+35 error node v0.10.25
+36 error npm  v2.11.1
+37 error code E404
+38 error 404 Not Found: zardak-soap
+38 error 404
+38 error 404 'zardak-soap' is not in the npm registry.
+38 error 404 You should bug the author to publish it (or use the name yourself!)
+38 error 404
+38 error 404 Note that you can also install from a
+38 error 404 tarball, folder, http url, or git url.
+39 verbose exit [ 1, true ]
